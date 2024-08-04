@@ -20,7 +20,7 @@ const uiConfig = {
     {
         provider: firebase.auth.EmailAuthProvider.PROVIDER_ID,
         requireDisplayName: false,
-        signInMethod: firebase.auth.EmailAuthProvider.EMAIL_LINK_SIGN_IN_METHOD
+        signInMethod: firebase.auth.EmailAuthProvider.EMAIL_PASSWORD_SIGN_IN_METHOD
     }
   ],
   tosUrl: '<your-tos-url>',
@@ -40,7 +40,7 @@ const SignInScreen = () => {
 
   return (
     <div>
-      <h1>Welcome to My Awesome App</h1>
+      <h1>Welcome to Your Pantry</h1>
       <div id="firebaseui-auth-container"></div>
       <div id="loader">Loading...</div>
     </div>
